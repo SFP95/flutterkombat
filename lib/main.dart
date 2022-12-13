@@ -6,7 +6,7 @@ import 'Scenes/SpaceShooterGame.dart';
 void main() {
 
 
-  SpaceShooterGame game =SpaceShooterGame;)();
+  SpaceShooterGame game =SpaceShooterGame();
   GameWidget gameWidget= GameWidget(game: game);
   runApp(gameWidget);
 
