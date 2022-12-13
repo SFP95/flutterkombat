@@ -5,30 +5,32 @@ import 'package:flutter/material.dart';
 class Player extends PositionComponent with Tappable {
   //static final _paint = Paint()..color = Colors.white;
   static final _paint = Paint();
-  Color cVisisble =Colors.white;
+  Color cVisible =Colors.white;
+  double iYMovido=0;
+  double iYOrigen=0;
 
   @override
   void render(Canvas canvas) {
-    _paint.color=Colors.white;
-    //Rect rect=Rect.
     canvas.drawRect(size.toRect(), _paint);
   }
   @override
   bool onTapUp(TapUpInfo info){
     print('tap up');
-    cVisisble=Colors.white;
+    cVisible=Colors.white;
     return true;
   }
   @override
   bool onTapDown(TapDownInfo info){
     print('tap up');
-    cVisisble=Colors.red;
+    cVisible=Colors.red;
+    iYMovido+=10; //movimiento del objeto
     return super.onTapDown(info);
   }
   @override
   void update(double dt) {
-    // TODO: implement update
     super.update(dt);
+    _paint.color=cVisible;
+    //posicioón origen del objeto Player
+    position[1]=iYOrigen+iYMovido;
   }
-
 }

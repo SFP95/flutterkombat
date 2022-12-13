@@ -23,4 +23,5 @@ class SpaceShooterGame extends FlameGame with HasTappables{
     this.add(nave);
 
   }
+
 }
