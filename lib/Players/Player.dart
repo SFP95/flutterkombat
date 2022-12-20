@@ -4,7 +4,7 @@ import 'package:flame/events.dart';
 import 'package:flutter/material.dart';
 
 class Player extends PositionComponent with Tappable {
-  //static final _paint = Paint()..color = Colors.white;
+
   static final _paint = Paint();
   Color cVisible =Colors.white;
   double iYMovido=0;
@@ -18,7 +18,7 @@ class Player extends PositionComponent with Tappable {
   late dynamic imgNave;
   final imagesLoader = Images();
   late Offset imgOffset;
-  late SpriteAnimation a;
+  //SpriteAnimation a;
 
   @override
   Future<void>? onLoad() async {
@@ -40,24 +40,29 @@ class Player extends PositionComponent with Tappable {
 
   @override
   void render(Canvas canvas) {
-    a.re
-    //sprite?.renderRect(canvas, rectObjecto);
-   // canvas.drawRect(size.toRect(), _paint);
+  //   a.re
+  //   //sprite?.renderRect(canvas, rectObjecto);
+  //  // canvas.drawRect(size.toRect(), _paint);
+  // }
+  // @override
+  // bool onTapUp(TapUpInfo info){
+  //   print('tap up');
+  //   cVisible=Colors.white;
+  //   //position[1]+position[1]+iDireccion;
+  //
+  //   // if (iYMovido==350) {
+  //   //   iYMovido -= 100;
+  //   // }
+  //   return true;
   }
   @override
-  bool onTapUp(TapUpInfo info){
-    print('tap up');
-    cVisible=Colors.white;
-    //position[1]+position[1]+iDireccion;
-
-    // if (iYMovido==350) {
-    //   iYMovido -= 100;
-    // }
+  bool onTapUp(TapUpInfo info) {
+    print("tap up");
+    cVisible = Colors.white;
     return true;
   }
   @override
   bool onTapDown(TapDownInfo info){
-    print('tap up');
     cVisible=Colors.red;
     //iYMovido+=10; //movimiento del objeto
     iDireccion=-iDireccion;
