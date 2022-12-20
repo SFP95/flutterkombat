@@ -3,7 +3,7 @@ import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flutter/material.dart';
 
-class Player extends PositionComponent with Tappable {
+class Player extends SpriteComponent  with Tappable {
 
   static final _paint = Paint();
   Color cVisible =Colors.white;
