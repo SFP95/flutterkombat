@@ -23,9 +23,9 @@ class KombatGame extends Forge2DGame{
 
     final capaObjGroup = mapComponent.tileMap.getLayer<ObjectGroup>('objetos');
 
-    for (final obj in capaObjGroup!.objects) {
+   /* for (final obj in capaObjGroup!.objects) {
       addTiledObjectCollision(obj);
-    }
+    }*/
 
     Fighter fighter=Fighter(position: Vector2(size.x/3,100), size: size*0.1);
     add(fighter);
