@@ -11,10 +11,12 @@ import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutterkombat/main.dart';
 
+import '../lib/Scenes/SpaceShooterGame.dart';
+
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const GameWidget());
+    await tester.pumpWidget(GameWidget(game: SpaceShooterGame()));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

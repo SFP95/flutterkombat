@@ -27,7 +27,7 @@ class KombatGame extends Forge2DGame{
       addTiledObjectCollision(obj);
     }
 
-    Fighter fighter=Fighter(position: Vector2(size.x/3,0), size: size*0.1);
+    Fighter fighter=Fighter(position: Vector2(size.x/3,100), size: size*0.1);
     add(fighter);
 
 
