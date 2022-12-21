@@ -92,6 +92,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.5.0"
+  flame_forge2d:
+    dependency: "direct main"
+    description:
+      name: flame_forge2d
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.12.4"
   flame_tiled:
     dependency: "direct main"
     description:
@@ -123,6 +130,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  forge2d:
+    dependency: transitive
+    description:
+      name: forge2d
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.11.0"
   image:
     dependency: transitive
     description:
