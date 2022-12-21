@@ -1,6 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ies.rf6.flutterkombat">
-   <application
+    package="ies.rf6.flutterkombat"> <!-- IDENTFICADOR -->
+
+    <uses-permission android:name="android.permision.INTERNET"/> <!-- PERMISOS DE INTERNET -->
+
+    <application
         android:label="flutterkombat"
         android:name="${applicationName}"
         android:icon="@mipmap/launcher_icon">
